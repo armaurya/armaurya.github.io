@@ -706,6 +706,67 @@
   </div>
 </section>
 
+<!-- ── SIDE PROJECTS ── -->
+<section id="side-projects" class="section">
+  <div class="container">
+    <span class="section-label reveal">Self-Exploration</span>
+    <h2 class="section-title reveal reveal-d1">Built for myself, in my own time.</h2>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">Personal projects that scratch real itches — built end-to-end, shipped to GitHub.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:28px;">
+
+      <div class="proj-card reveal" style="border-left:3px solid var(--blue);">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <span class="proj-label" style="background:#f0f9ff;color:#0369a1;border:none;">Electron · TypeScript · AI</span>
+          <a href="https://github.com/armaurya/EchoNote" target="_blank" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border:1px solid var(--border);border-radius:6px;transition:all .2s;" onmouseover="this.style.color='var(--blue)';this.style.borderColor='var(--blue)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            armaurya/EchoNote
+          </a>
+        </div>
+        <div class="proj-title" style="margin-top:12px;">EchoNote — Silent Meeting Recorder</div>
+        <div class="proj-desc">Desktop app for Mac &amp; Windows that silently captures meeting audio in the background, transcribes it entirely on-device via <strong>whisper.cpp</strong>, and generates structured notes (summary, action items, decisions) using a locally-hosted AI model. Privacy-first — nothing leaves your machine.</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px;line-height:1.6;">
+          Auto-detects Zoom / Teams / Meet · Full-text search across all transcripts (SQLite FTS5) · Calendar integration · Markdown export · Cross-platform CI via GitHub Actions.
+        </div>
+        <div class="proj-tags" style="margin-top:12px;">
+          <span class="proj-tag">Electron</span>
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">TypeScript</span>
+          <span class="proj-tag">whisper.cpp</span>
+          <span class="proj-tag">Ollama</span>
+          <span class="proj-tag">SQLite FTS5</span>
+          <span class="proj-tag">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d1" style="border-left:3px solid #7c3aed;">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <span class="proj-label" style="background:#f5f3ff;color:#6d28d9;border:none;">Python · Flask · Payments</span>
+          <a href="https://github.com/armaurya/SettleCore" target="_blank" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border:1px solid var(--border);border-radius:6px;transition:all .2s;" onmouseover="this.style.color='#7c3aed';this.style.borderColor='#7c3aed'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            armaurya/SettleCore
+          </a>
+        </div>
+        <div class="proj-title" style="margin-top:12px;">SettleCore — 3-Way Reconciliation Engine</div>
+        <div class="proj-desc">Payments recon engine that matches transactions across <strong>Terminal × Switch × Scheme</strong> (VISA / Mastercard). Multi-pass matching: RRN-primary, Auth Code + Amount fallback. Surfaces MATCHED_FULL, AMOUNT_MISMATCH, TERMINAL_ONLY, SWITCH_ONLY, and SCHEME_ONLY statuses per transaction.</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px;line-height:1.6;">
+          Supports VISA TC33 &amp; Mastercard IP755120 file formats · Flask web UI with upload &amp; email delivery · Docker + Gunicorn deployment · Amount tolerance logic (₹1 threshold).
+        </div>
+        <div class="proj-tags" style="margin-top:12px;">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Flask</span>
+          <span class="proj-tag">pandas</span>
+          <span class="proj-tag">VISA TC33</span>
+          <span class="proj-tag">Mastercard IP755120</span>
+          <span class="proj-tag">Docker</span>
+          <span class="proj-tag">SQLite</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── EDUCATION ── -->
 <section id="education" class="section">
   <div class="container">
