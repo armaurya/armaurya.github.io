@@ -1,766 +1,921 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KJ3FRZZ');</script>
-<!-- End Google Tag Manager -->
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KJ3FRZZ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Maurya — Senior PM, Payments & Acquiring</title>
+  <meta name="description" content="Senior Product Manager with 7+ years in Payments, Acquiring, SoftPOS, and MPoC. Led MEA-first Tap to Pay on iPhone launch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <title>Abhishek Maurya — Senior PM, Payments & Acquiring</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Abhishek Maurya — Senior Product Manager specialising in Payments, Acquiring, SoftPOS, MPoC, and PCI DSS compliance. 7+ years owning acquiring products from zero to production.">
+    :root {
+      --navy:   #0a1628;
+      --navy2:  #0f2040;
+      --blue:   #3b82f6;
+      --blue-d: #2563eb;
+      --cyan:   #06b6d4;
+      --text:   #0f172a;
+      --muted:  #64748b;
+      --light:  #f8fafc;
+      --border: #e2e8f0;
+      --white:  #ffffff;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.07);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+      --font: 'Inter', system-ui, sans-serif;
+    }
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.6; overflow-x: hidden; }
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--navy); }
+    ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
 
-    <style>
-      .skill-tag {
-        display: inline-block;
-        background: #f8f9fa;
-        border: 1px solid #e0e0e0;
-        border-radius: 20px;
-        padding: 4px 14px;
-        margin: 4px 3px;
-        font-size: 13px;
-        color: #444;
-      }
-      .skill-tag.highlight {
-        background: #f97316;
-        border-color: #f97316;
-        color: #fff;
-      }
-      .cert-badge {
-        display: inline-block;
-        background: #fff3e0;
-        border: 1px solid #ffcc80;
-        border-radius: 6px;
-        padding: 6px 14px;
-        margin: 5px 4px;
-        font-size: 13px;
-        color: #bf360c;
-        font-weight: 500;
-      }
-      .project-label {
-        background: rgba(249,115,22,0.85);
-        color: #fff;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 3px 10px;
-        border-radius: 3px;
-        display: inline-block;
-        margin-bottom: 8px;
-      }
-      .stat-box {
-        text-align: center;
-        padding: 20px 10px;
-      }
-      .stat-box .number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #f97316;
-        line-height: 1;
-      }
-      .stat-box .label {
-        font-size: 13px;
-        color: #888;
-        margin-top: 6px;
-      }
-    </style>
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    /* ── UTILITIES ── */
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section-alt { background: var(--light); }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 16px;
+    }
+    .section-label::before { content: ''; width: 24px; height: 2px; background: var(--blue); }
+    .section-title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; line-height: 1.15; color: var(--text); margin-bottom: 16px; }
+    .section-sub { font-size: 16px; color: var(--muted); max-width: 520px; }
+    .tag {
+      display: inline-flex; align-items: center;
+      background: #eff6ff; color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      border-radius: 20px; padding: 4px 14px; font-size: 12.5px; font-weight: 500;
+      margin: 3px; transition: all .2s;
+    }
+    .tag:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
+    .tag.orange { background: #fff7ed; color: #c2410c; border-color: #fed7aa; }
+    .tag.orange:hover { background: #f97316; color: #fff; border-color: #f97316; }
+    .tag.purple { background: #f5f3ff; color: #6d28d9; border-color: #ddd6fe; }
+    .tag.purple:hover { background: #7c3aed; color: #fff; border-color: #7c3aed; }
+    .tag.green { background: #f0fdf4; color: #166534; border-color: #bbf7d0; }
+    .tag.green:hover { background: #16a34a; color: #fff; border-color: #16a34a; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 8px; font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none; transition: all .2s; border: none;
+    }
+    .btn-primary { background: var(--blue); color: var(--white); }
+    .btn-primary:hover { background: var(--blue-d); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(59,130,246,0.35); }
+    .btn-ghost { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.35); }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 0; transition: all .35s;
+    }
+    nav.scrolled {
+      background: rgba(10,22,40,0.92); backdrop-filter: blur(16px);
+      padding: 14px 0; box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-size: 18px; font-weight: 800; color: var(--white); text-decoration: none; letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--blue); }
+    .nav-links { display: flex; list-style: none; gap: 8px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 6px;
+      transition: all .2s;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+    .nav-links a.active { color: var(--white); }
+    .nav-cta {
+      background: var(--blue); color: var(--white) !important;
+      padding: 8px 18px !important; border-radius: 7px !important;
+    }
+    .nav-cta:hover { background: var(--blue-d) !important; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; margin: 5px 0; transition: all .3s; border-radius: 2px; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh; display: flex; align-items: center;
+      background: var(--navy);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59,130,246,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 80% 60%, rgba(6,182,212,0.08) 0%, transparent 60%);
+      position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .hero-inner { position: relative; z-index: 1; padding: 120px 0 80px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 30px; padding: 6px 16px;
+      font-size: 13px; font-weight: 500; color: #93c5fd;
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 3px rgba(74,222,128,0.25); }
+    .hero-name { font-size: clamp(44px, 8vw, 80px); font-weight: 800; color: var(--white); line-height: 1.05; letter-spacing: -2px; margin-bottom: 16px; }
+    .hero-name span { color: var(--blue); }
+    .hero-title { font-size: clamp(18px, 3vw, 24px); font-weight: 400; color: rgba(255,255,255,0.6); margin-bottom: 28px; min-height: 32px; }
+    .hero-title strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+    .hero-desc { font-size: 16px; color: rgba(255,255,255,0.5); max-width: 560px; margin-bottom: 40px; line-height: 1.75; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 64px; }
+    .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .hero-pill {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px; padding: 6px 14px; font-size: 12px; color: rgba(255,255,255,0.55); font-weight: 500;
+    }
+    .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.06); border-radius: var(--radius); overflow: hidden; margin-top: 64px; }
+    .hero-stat { background: rgba(255,255,255,0.02); padding: 28px 24px; text-align: center; }
+    .hero-stat .num { font-size: 36px; font-weight: 800; color: var(--white); letter-spacing: -1px; line-height: 1; }
+    .hero-stat .num span { color: var(--blue); }
+    .hero-stat .lbl { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 6px; font-weight: 500; letter-spacing: 0.5px; }
+
+    /* ── ABOUT ── */
+    #about .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .about-visual {
+      aspect-ratio: 4/5; background: linear-gradient(135deg, #0f2040 0%, #1e3a6e 100%);
+      border-radius: 20px; position: relative; overflow: hidden;
+      display: flex; align-items: flex-end;
+    }
+    .about-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(59,130,246,0.25) 0%, transparent 60%);
+    }
+    .about-visual-initials {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%);
+      font-size: 96px; font-weight: 800; color: rgba(59,130,246,0.2); letter-spacing: -4px;
+      user-select: none;
+    }
+    .about-visual-card {
+      position: relative; z-index: 1; width: 100%; padding: 24px;
+      background: linear-gradient(to top, rgba(10,22,40,0.95) 0%, transparent 100%);
+    }
+    .about-visual-card .name { font-size: 20px; font-weight: 700; color: #fff; }
+    .about-visual-card .role { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 4px; }
+    .about-visual-card .chips { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+    .about-visual-card .chip { background: rgba(59,130,246,0.25); border: 1px solid rgba(59,130,246,0.35); border-radius: 4px; padding: 3px 10px; font-size: 11px; color: #93c5fd; font-weight: 500; }
+    .about-text p { color: var(--muted); font-size: 16px; line-height: 1.8; margin-bottom: 20px; }
+    .about-text p strong { color: var(--text); }
+    .about-info { list-style: none; margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .about-info li { display: flex; flex-direction: column; gap: 2px; }
+    .about-info .info-label { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); }
+    .about-info .info-val { font-size: 14px; color: var(--text); font-weight: 500; }
+    .about-info .info-val a { color: var(--text); text-decoration: none; }
+    .about-info .info-val a:hover { color: var(--blue); }
+
+    /* ── EXPERIENCE ── */
+    #experience .timeline { position: relative; padding-left: 32px; }
+    #experience .timeline::before {
+      content: ''; position: absolute; left: 6px; top: 8px; bottom: 0;
+      width: 2px; background: linear-gradient(to bottom, var(--blue), transparent);
+    }
+    .tl-item { position: relative; margin-bottom: 48px; }
+    .tl-item:last-child { margin-bottom: 0; }
+    .tl-dot {
+      position: absolute; left: -29px; top: 8px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--white); border: 3px solid var(--blue);
+      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+    }
+    .tl-item.active .tl-dot { background: var(--blue); }
+    .tl-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px 32px;
+      transition: all .25s; cursor: default;
+    }
+    .tl-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateX(4px); }
+    .tl-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 4px; flex-wrap: wrap; }
+    .tl-role { font-size: 17px; font-weight: 700; color: var(--text); }
+    .tl-date { font-size: 12px; font-weight: 600; color: var(--blue); background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 20px; padding: 4px 12px; white-space: nowrap; }
+    .tl-company { font-size: 14px; color: var(--muted); font-weight: 500; margin-bottom: 4px; }
+    .tl-clients { font-size: 12px; color: var(--blue); margin-bottom: 16px; }
+    .tl-bullets { list-style: none; }
+    .tl-bullets li { font-size: 14px; color: var(--muted); padding: 4px 0 4px 20px; position: relative; line-height: 1.6; }
+    .tl-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--blue); font-size: 12px; top: 5px; }
+    .tl-bullets li strong { color: var(--text); font-weight: 600; }
+
+    /* ── SKILLS ── */
+    #skills .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+    .skill-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: box-shadow .2s; }
+    .skill-card:hover { box-shadow: var(--shadow); }
+    .skill-card-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .skill-card-title .icon { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+    .skill-card-title .icon.blue { background: #eff6ff; }
+    .skill-card-title .icon.orange { background: #fff7ed; }
+    .skill-card-title .icon.purple { background: #f5f3ff; }
+    .skill-card-title .icon.green { background: #f0fdf4; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .skill-bar-list { margin-top: 32px; }
+    .skill-bar-item { margin-bottom: 18px; }
+    .skill-bar-label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+    .skill-bar-label span { color: var(--muted); font-weight: 400; }
+    .skill-bar-track { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+    .skill-bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--cyan)); border-radius: 3px; width: 0; transition: width 1.2s cubic-bezier(.16,1,.3,1); }
+
+    /* ── PROJECTS ── */
+    #projects .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .proj-card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 28px; display: flex; flex-direction: column; gap: 12px;
+      transition: all .25s; cursor: default;
+    }
+    .proj-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .proj-number { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    .proj-label { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; background: #eff6ff; color: var(--blue); }
+    .proj-label.featured { background: #fef3c7; color: #92400e; }
+    .proj-title { font-size: 16px; font-weight: 700; color: var(--text); line-height: 1.35; }
+    .proj-desc { font-size: 13px; color: var(--muted); line-height: 1.65; flex: 1; }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .proj-tag { background: var(--light); border: 1px solid var(--border); border-radius: 4px; padding: 3px 9px; font-size: 11px; color: var(--muted); font-weight: 500; }
+
+    /* ── EDUCATION ── */
+    #education .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .edu-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; transition: all .25s; }
+    .edu-card:hover { border-color: var(--blue); box-shadow: var(--shadow); }
+    .edu-icon { width: 44px; height: 44px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+    .edu-degree { font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.3; margin-bottom: 6px; }
+    .edu-school { font-size: 13px; color: var(--blue); font-weight: 600; margin-bottom: 4px; }
+    .edu-year { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+    .edu-badge { display: inline-flex; align-items: center; gap: 5px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 20px; padding: 4px 12px; font-size: 12px; color: #166534; font-weight: 600; }
+
+    /* ── CERTIFICATIONS ── */
+    #certifications .certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .cert-item { display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: all .2s; }
+    .cert-item:hover { border-color: var(--blue); box-shadow: var(--shadow); }
+    .cert-icon { width: 40px; height: 40px; border-radius: 8px; background: linear-gradient(135deg, #eff6ff, #dbeafe); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .cert-info .cert-name { font-size: 14px; font-weight: 700; color: var(--text); }
+    .cert-info .cert-issuer { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* ── RECOMMENDATIONS ── */
+    #recommendations .recs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .rec-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; transition: box-shadow .2s; }
+    .rec-card:hover { box-shadow: var(--shadow); }
+    .rec-quote { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 24px; position: relative; }
+    .rec-quote::before { content: '"'; font-size: 48px; color: var(--border); font-family: Georgia, serif; line-height: 0; vertical-align: -20px; margin-right: 4px; }
+    .rec-author { display: flex; align-items: center; gap: 12px; }
+    .rec-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--navy), var(--blue)); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #fff; flex-shrink: 0; }
+    .rec-name { font-size: 14px; font-weight: 700; color: var(--text); }
+    .rec-title { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--navy); }
+    #contact .section-label { color: rgba(147,197,253,0.8); }
+    #contact .section-label::before { background: rgba(147,197,253,0.8); }
+    #contact .section-title { color: var(--white); }
+    #contact .section-sub { color: rgba(255,255,255,0.5); }
+    .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.06); border-radius: var(--radius); overflow: hidden; margin-top: 56px; }
+    .contact-item {
+      background: rgba(255,255,255,0.02); padding: 36px 28px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      text-decoration: none; transition: background .2s;
+    }
+    .contact-item:hover { background: rgba(59,130,246,0.12); }
+    .contact-item .c-icon { font-size: 28px; }
+    .contact-item .c-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .contact-item .c-val { font-size: 14px; font-weight: 600; color: var(--white); word-break: break-all; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 28px 0; text-align: center; }
+    footer p { font-size: 13px; color: rgba(255,255,255,0.3); }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a:hover { color: var(--blue); }
+
+    /* ── ANIMATIONS ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: .1s; }
+    .reveal-d2 { transition-delay: .2s; }
+    .reveal-d3 { transition-delay: .3s; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 900px) {
+      .section { padding: 64px 0; }
+      #about .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-visual { aspect-ratio: 3/2; }
+      #skills .skills-grid { grid-template-columns: 1fr; }
+      #projects .projects-grid { grid-template-columns: 1fr 1fr; }
+      #education .edu-grid { grid-template-columns: 1fr; }
+      #certifications .certs-grid { grid-template-columns: 1fr; }
+      #recommendations .recs-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .about-info { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,22,40,0.97); padding: 16px 24px 24px; gap: 4px; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+      #projects .projects-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ3FRZZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ3FRZZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><span>A</span>bhishek</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Work</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo"><span>A</span>bhishek Maurya</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow">
+      <div class="dot"></div>
+      Open to Senior PM / Director Roles in Payments
+    </div>
+    <h1 class="hero-name">Abhishek<br><span>Maurya</span></h1>
+    <p class="hero-title"><strong id="rotatingTitle">Senior PM — Payments &amp; Acquiring</strong></p>
+    <p class="hero-desc">7+ years owning acquiring products from zero to production — SoftPOS, MPoC, BIN sponsorship, settlement infrastructure. Led the MEA-first Tap to Pay on iPhone launch. Mumbai, India.</p>
+    <div class="hero-actions">
+      <a href="mailto:abhimaurya.jobs@gmail.com" class="btn btn-primary">Get In Touch</a>
+      <a href="#experience" class="btn btn-ghost">View Experience</a>
+    </div>
+    <div class="hero-pills">
+      <span class="hero-pill">SoftPOS / MPoC</span>
+      <span class="hero-pill">Tap to Pay on iPhone</span>
+      <span class="hero-pill">PCI DSS</span>
+      <span class="hero-pill">BIN Sponsorship</span>
+      <span class="hero-pill">Settlement / Reconciliation</span>
+      <span class="hero-pill">Visa · Mastercard · RuPay</span>
+      <span class="hero-pill">SDK Product</span>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">7<span>+</span></div><div class="lbl">Years in Payments</div></div>
+      <div class="hero-stat"><div class="num">#<span>1</span></div><div class="lbl">MEA Tap to Pay iPhone</div></div>
+      <div class="hero-stat"><div class="num">300<span>+</span></div><div class="lbl">Merchants in 2 Months</div></div>
+      <div class="hero-stat"><div class="num">50<span>%</span></div><div class="lbl">Order Time Reduction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-visual-initials">AM</div>
+        <div class="about-visual-card">
+          <div class="name">Abhishek Maurya</div>
+          <div class="role">Senior PM — Payments &amp; Acquiring</div>
+          <div class="chips">
+            <span class="chip">PCI DSS</span>
+            <span class="chip">MPoC</span>
+            <span class="chip">SoftPOS</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">About</span>
+        <h2 class="section-title reveal reveal-d1">Payments PM who ships, not just specifies.</h2>
+        <p class="reveal reveal-d2">7+ years owning acquiring products from zero to production — across SoftPOS, MPoC, QR, BIN sponsorship, and settlement infrastructure. Took the first <strong>Tap to Pay on iPhone live in MEA</strong> for Magnati (UAE).</p>
+        <p class="reveal reveal-d2">Defined the acquiring stack at Mosambee: BIN config, scheme onboarding, reconciliation engine, and merchant payout logic. Operates at the intersection of product, engineering, and compliance — making calls on architecture, not just documenting them.</p>
+        <ul class="about-info reveal reveal-d3">
+          <li><span class="info-label">Location</span><span class="info-val">Mumbai, India</span></li>
+          <li><span class="info-label">Email</span><span class="info-val"><a href="mailto:abhimaurya.jobs@gmail.com">abhimaurya.jobs@gmail.com</a></span></li>
+          <li><span class="info-label">Phone</span><span class="info-val"><a href="tel:+919987543476">+91-9987543476</a></span></li>
+          <li><span class="info-label">LinkedIn</span><span class="info-val"><a href="https://linkedin.com/in/abhishekrmaurya" target="_blank">abhishekrmaurya</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <span class="section-label reveal">Experience</span>
+    <h2 class="section-title reveal reveal-d1">Where I've built things.</h2>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:56px;">Five roles across fintech, payments, and enterprise software — each one a step deeper into the stack.</p>
+
+    <div class="timeline">
+
+      <div class="tl-item active reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-role">Senior PM — Acquiring &amp; Payments</div>
+            <div class="tl-date">Feb 2024 – Present</div>
+          </div>
+          <div class="tl-company">Mosambee (Synergistic Financial Networks)</div>
+          <div class="tl-clients">Magnati (UAE) · Pine Labs · Infibeam · Bank Muscat · Network International · Indian Bank</div>
+          <ul class="tl-bullets">
+            <li>Owned the MEA-first <strong>Tap to Pay on iPhone</strong> launch for Magnati — product, compliance, and go-to-market; no prior Apple MEA reference customer existed.</li>
+            <li>Conceptualised and shipped <strong>MF SR600</strong> — low-cost QR + card acceptance device — from blank-page brief to live product with Pine Labs, HDFC, Yes Bank, and Infibeam.</li>
+            <li>Defined the <strong>SoftPOS SDK product</strong> — acceptance flows, TID rotation logic, DUKPT/AES key management, and MPoC compliance model — enabling partner self-serve integration.</li>
+            <li>Took <strong>MPCSS QR integration live for Bank Muscat</strong> (Oman) — resolved ambiguous scheme specs via TLV field model, CRC logic, and SalisPay webhook contract.</li>
+            <li>Ran <strong>BIN sponsorship program</strong> with Indian Bank — Visa, Mastercard &amp; RuPay; 300 merchants live within 2 months of pilot.</li>
+            <li>Built <strong>SettleCore</strong> — Mosambee's reconciliation and payout engine — from scratch; daily recon and merchant payouts in production.</li>
+            <li>Held <strong>PCI DSS and PCI MPoC compliance</strong> across all live products as an active architectural constraint.</li>
           </ul>
         </div>
       </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero-wrap js-fullheight" id="home-section">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-            <div class="text text-center">
-              <span class="subheading">Hey! I am</span>
-              <h1>Abhishek Maurya</h1>
-              <h2>Senior PM —&nbsp;
-                <span
-                  class="txt-rotate"
-                  data-period="2000"
-                  data-rotate='["Payments & Acquiring.", "SoftPOS & MPoC.", "PCI DSS Compliance.", "Tap to Pay on iPhone."]'></span>
-              </h2>
-              <p class="mt-3" style="color:rgba(255,255,255,0.75);font-size:15px;">
-                7+ years owning acquiring products from zero to production — MEA, India, Oman.
-              </p>
-              <p class="mt-4">
-                <a href="mailto:abhimaurya.jobs@gmail.com" class="btn btn-primary py-3 px-4 mr-2">Get In Touch</a>
-                <a href="#resume-section" class="btn btn-outline-white py-3 px-4">View Resume</a>
-              </p>
-            </div>
+      <div class="tl-item reveal reveal-d1">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-role">Vice President, Product</div>
+            <div class="tl-date">Sep 2021 – Jan 2024</div>
+          </div>
+          <div class="tl-company">ePaisa India</div>
+          <div class="tl-clients">Head of Product for eAtos — US-based restaurant SaaS</div>
+          <ul class="tl-bullets">
+            <li>Reduced order processing time by <strong>50%</strong> by redesigning the end-to-end ordering flow and launching 'Simple Mode' for high-volume environments.</li>
+            <li>Rebuilt the online order management portal — cashiers processed orders <strong>75% faster</strong> during peak traffic.</li>
+            <li>Built <strong>InventoryOS</strong> from scratch — raw material tracking, recipe costing, pricing, and profitability analytics for SMB restaurants.</li>
+            <li>Shipped <strong>LoyaltyOS</strong> and orchestrated 20+ third-party integrations including VoiceOS (DialogFlow), weather/events forecasting, and Recipe AI.</li>
+            <li>Led a team of ~10 PMs; owned all client, vendor, and stakeholder relationships including commercial negotiations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-d2">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-role">Associate Product Manager</div>
+            <div class="tl-date">Apr – Jun 2021</div>
+          </div>
+          <div class="tl-company">Eccentric Engine &nbsp;·&nbsp; Nissan India</div>
+          <ul class="tl-bullets">
+            <li>Defined early roadmap, wireframes, and documentation for 'Concierge' — a new digital platform for Nissan India — enabling structured Agile delivery.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-d3">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-role">Senior Tester / QA Lead</div>
+            <div class="tl-date">Apr 2018 – Jun 2019</div>
+          </div>
+          <div class="tl-company">ePaisa India</div>
+          <ul class="tl-bullets">
+            <li>Built test automation framework from scratch; led manual and automation testers; conducted competitive feature analysis and merchant feedback studies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-d3">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-role">Systems Associate</div>
+            <div class="tl-date">Jun 2015 – Jun 2017</div>
+          </div>
+          <div class="tl-company">Capgemini India &nbsp;·&nbsp; Element (General Electric)</div>
+          <ul class="tl-bullets">
+            <li>Developed test automation framework using Appium/Xcode; interfaced directly with client BAs to translate requirements into test plans.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="section">
+  <div class="container">
+    <span class="section-label reveal">Skills</span>
+    <h2 class="section-title reveal reveal-d1">What I bring to the table.</h2>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">Deep payments domain knowledge combined with technical literacy and data fluency.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-title">
+          <span class="icon blue">💳</span> Payments &amp; Acquiring
+        </div>
+        <div class="skill-tags">
+          <span class="tag orange">SoftPOS / MPoC</span>
+          <span class="tag orange">Tap to Pay on iPhone</span>
+          <span class="tag orange">PCI DSS</span>
+          <span class="tag orange">PCI MPoC</span>
+          <span class="tag">DUKPT / AES</span>
+          <span class="tag">TLV Encoding</span>
+          <span class="tag">QR Payments</span>
+          <span class="tag">DCC</span>
+          <span class="tag">BIN Sponsorship</span>
+          <span class="tag">Acquiring Workflows</span>
+          <span class="tag">Visa / MC / RuPay</span>
+          <span class="tag">MPCSS (Oman)</span>
+          <span class="tag">EMV Schemes</span>
+          <span class="tag">Settlement Recon</span>
+          <span class="tag">Merchant Payouts</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-card-title">
+          <span class="icon purple">🗺️</span> Product Management
+        </div>
+        <div class="skill-tags">
+          <span class="tag purple">PRD Writing</span>
+          <span class="tag purple">Roadmapping</span>
+          <span class="tag purple">SDK / API Product</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Figma / Adobe XD</span>
+          <span class="tag">A/B Testing</span>
+          <span class="tag">User Interviews</span>
+          <span class="tag">OKR Definition</span>
+          <span class="tag">JIRA / Confluence</span>
+          <span class="tag">Agile / SAFe</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-card-title">
+          <span class="icon blue">⚙️</span> Technical
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Java (integration review)</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Flutter / Dart</span>
+          <span class="tag">Postman</span>
+          <span class="tag">AWS Associate</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d3">
+        <div class="skill-card-title">
+          <span class="icon green">📊</span> Analytics &amp; Data
+        </div>
+        <div class="skill-tags">
+          <span class="tag green">Amplitude</span>
+          <span class="tag green">Google Analytics</span>
+          <span class="tag green">Tableau</span>
+          <span class="tag green">Power BI</span>
+          <span class="tag">pandas</span>
+          <span class="tag">NumPy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-bar-list" style="margin-top:48px;max-width:640px;">
+      <div class="skill-bar-item reveal">
+        <div class="skill-bar-label">Payments &amp; Acquiring <span>Expert</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-w="95"></div></div>
+      </div>
+      <div class="skill-bar-item reveal reveal-d1">
+        <div class="skill-bar-label">Product Strategy &amp; Roadmapping <span>Expert</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90"></div></div>
+      </div>
+      <div class="skill-bar-item reveal reveal-d2">
+        <div class="skill-bar-label">PCI DSS / Compliance <span>Advanced</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90"></div></div>
+      </div>
+      <div class="skill-bar-item reveal reveal-d2">
+        <div class="skill-bar-label">SDK / API Product Management <span>Advanced</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85"></div></div>
+      </div>
+      <div class="skill-bar-item reveal reveal-d3">
+        <div class="skill-bar-label">Data Analytics <span>Proficient</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-w="80"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <span class="section-label reveal">Key Work</span>
+    <h2 class="section-title reveal reveal-d1">Products shipped from zero.</h2>
+    <p class="section-sub reveal reveal-d2" style="margin-bottom:48px;">Zero-to-production across MEA, India, and Oman — each with real acquiring partners and live transactions.</p>
+
+    <div class="projects-grid">
+      <div class="proj-card reveal">
+        <div class="proj-number">01</div>
+        <span class="proj-label featured">MEA First</span>
+        <div class="proj-title">Tap to Pay on iPhone — Magnati UAE</div>
+        <div class="proj-desc">Led the first-ever Tap to Pay on iPhone launch in MEA for Magnati. Made product, compliance, and go-to-market calls with no prior Apple reference in the region.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">SoftPOS</span><span class="proj-tag">MPoC</span><span class="proj-tag">Apple</span><span class="proj-tag">PCI MPoC</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d1">
+        <div class="proj-number">02</div>
+        <span class="proj-label">Hardware + Software</span>
+        <div class="proj-title">MF SR600 — QR &amp; Card Device</div>
+        <div class="proj-desc">Low-cost QR + card acceptance device from blank-page brief to live product. Set hardware spec, acceptance flow, and acquirer integration model.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Pine Labs</span><span class="proj-tag">HDFC</span><span class="proj-tag">Yes Bank</span><span class="proj-tag">Infibeam</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d2">
+        <div class="proj-number">03</div>
+        <span class="proj-label">Settlement</span>
+        <div class="proj-title">SettleCore — Recon &amp; Payout Engine</div>
+        <div class="proj-desc">Built Mosambee's reconciliation and payout engine from scratch. Defined the data model, exception logic, and payout rules — running daily in production.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Daily Recon</span><span class="proj-tag">Payouts</span><span class="proj-tag">Exception Logic</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d1">
+        <div class="proj-number">04</div>
+        <span class="proj-label">QR Scheme</span>
+        <div class="proj-title">MPCSS QR — Bank Muscat, Oman</div>
+        <div class="proj-desc">Resolved ambiguous MPCSS scheme specs by defining TLV field model, CRC logic, and SalisPay webhook contract — unblocking a stalled regional integration.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">TLV</span><span class="proj-tag">MPCSS</span><span class="proj-tag">Oman</span><span class="proj-tag">QR</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d2">
+        <div class="proj-number">05</div>
+        <span class="proj-label">Acquiring</span>
+        <div class="proj-title">BIN Sponsorship — Indian Bank</div>
+        <div class="proj-desc">Built greenfield BIN sponsorship capability at Mosambee — scheme onboarding, BIN config, acquiring compliance. 300 merchants live within 2 months of pilot.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Visa</span><span class="proj-tag">Mastercard</span><span class="proj-tag">RuPay</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d3">
+        <div class="proj-number">06</div>
+        <span class="proj-label">Restaurant SaaS</span>
+        <div class="proj-title">InventoryOS + LoyaltyOS — eAtos</div>
+        <div class="proj-desc">Built raw material tracking, recipe costing, and a loyalty engine from scratch for US restaurant SaaS. Orchestrated 20+ integrations including VoiceOS via DialogFlow.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Inventory</span><span class="proj-tag">Loyalty</span><span class="proj-tag">DialogFlow</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education" class="section">
+  <div class="container">
+    <span class="section-label reveal">Education</span>
+    <h2 class="section-title reveal reveal-d1">Academic background.</h2>
+    <div class="edu-grid" style="margin-top:40px;">
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">PGDM — Finance / Business Analytics &amp; IT</div>
+        <div class="edu-school">IMT Nagpur</div>
+        <div class="edu-year">2019 – 2021 · CGPA 8.02 / 10</div>
+        <span class="edu-badge">🥈 Silver Medalist</span>
+      </div>
+      <div class="edu-card reveal reveal-d1">
+        <div class="edu-icon">🤖</div>
+        <div class="edu-degree">PGD — Artificial Intelligence &amp; Machine Learning</div>
+        <div class="edu-school">IIIT Bangalore / upGrad</div>
+        <div class="edu-year">2020 – 2021 · CGPA 3.38 / 4</div>
+      </div>
+      <div class="edu-card reveal reveal-d2">
+        <div class="edu-icon">💻</div>
+        <div class="edu-degree">BSc. Information Technology</div>
+        <div class="edu-school">Mumbai University</div>
+        <div class="edu-year">2012 – 2015 · 74.63%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <span class="section-label reveal">Certifications</span>
+    <h2 class="section-title reveal reveal-d1">Credentials.</h2>
+    <div class="certs-grid" style="margin-top:40px;">
+      <div class="cert-item reveal">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <div class="cert-name">CSPO — Certified Scrum Product Owner</div>
+          <div class="cert-issuer">Scrum Alliance</div>
+        </div>
+      </div>
+      <div class="cert-item reveal reveal-d1">
+        <div class="cert-icon">📐</div>
+        <div class="cert-info">
+          <div class="cert-name">SAFe 6.0 Agile Product Manager</div>
+          <div class="cert-issuer">Scaled Agile</div>
+        </div>
+      </div>
+      <div class="cert-item reveal reveal-d1">
+        <div class="cert-icon">☁️</div>
+        <div class="cert-info">
+          <div class="cert-name">AWS Solutions Architect Associate</div>
+          <div class="cert-issuer">Amazon Web Services · In Progress</div>
+        </div>
+      </div>
+      <div class="cert-item reveal reveal-d2">
+        <div class="cert-icon">📈</div>
+        <div class="cert-info">
+          <div class="cert-name">Google Analytics (Advanced)</div>
+          <div class="cert-issuer">Google</div>
+        </div>
+      </div>
+      <div class="cert-item reveal reveal-d2">
+        <div class="cert-icon">✨</div>
+        <div class="cert-info">
+          <div class="cert-name">Google Prompting Essentials</div>
+          <div class="cert-issuer">Google</div>
+        </div>
+      </div>
+      <div class="cert-item reveal reveal-d3">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <div class="cert-name">PGD — AI / ML</div>
+          <div class="cert-issuer">IIIT Bangalore / upGrad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RECOMMENDATIONS ── -->
+<section id="recommendations" class="section">
+  <div class="container">
+    <span class="section-label reveal">Recommendations</span>
+    <h2 class="section-title reveal reveal-d1">What colleagues say.</h2>
+    <div class="recs-grid" style="margin-top:40px;">
+      <div class="rec-card reveal">
+        <p class="rec-quote">Abhishek is a hardworking colleague — he understood the product so well in such quick time. He would take initiatives, hold strong to his point, explain the problem and come up with a solution that makes sense. An amazing colleague with loads of positive energy.</p>
+        <div class="rec-author">
+          <div class="rec-avatar">S</div>
+          <div>
+            <div class="rec-name">Shreyash Shah</div>
+            <div class="rec-title">Sr Graphic Designer, eigital</div>
           </div>
         </div>
       </div>
-      <div class="mouse">
-        <a href="#about-section" class="mouse-icon">
-          <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ABOUT / STATS -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-6 col-lg-6 d-flex ftco-animate">
-            <div class="img-about img d-flex align-items-stretch" style="background-image:url(images/about.jpg);min-height:400px;width:100%;"></div>
-          </div>
-          <div class="col-md-6 col-lg-6 pl-md-5 py-5 ftco-animate">
-            <div class="py-md-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <h2 class="mb-4">About Me</h2>
-                </div>
-              </div>
-              <p>Payments PM with 7+ years owning acquiring products from zero to production — across SoftPOS, MPoC, QR, BIN sponsorship, and settlement infrastructure. Took the first <strong>Tap to Pay on iPhone live in MEA</strong>. Defined the acquiring stack at Mosambee: BIN config, scheme onboarding, reconciliation engine, and merchant payout logic.</p>
-              <p>Operates at the intersection of product, engineering, and compliance — making calls on architecture, not just documenting them.</p>
-              <ul class="about-info mt-4 px-md-0 px-2">
-                <li class="d-flex"><span>Location:</span> <span>Mumbai, India</span></li>
-                <li class="d-flex"><span>Email:</span> <span><a href="mailto:abhimaurya.jobs@gmail.com">abhimaurya.jobs@gmail.com</a></span></li>
-                <li class="d-flex"><span>Phone:</span> <span><a href="tel:+919987543476">+91-9987543476</a></span></li>
-                <li class="d-flex"><span>LinkedIn:</span> <span><a href="https://linkedin.com/in/abhishekrmaurya" target="_blank">linkedin.com/in/abhishekrmaurya</a></span></li>
-              </ul>
-              <div class="row mt-5">
-                <div class="col-3 stat-box">
-                  <div class="number">7<span style="font-size:1.2rem">+</span></div>
-                  <div class="label">Years in Payments</div>
-                </div>
-                <div class="col-3 stat-box">
-                  <div class="number">1<span style="font-size:1rem">st</span></div>
-                  <div class="label">Tap to Pay MEA</div>
-                </div>
-                <div class="col-3 stat-box">
-                  <div class="number">300<span style="font-size:1rem">+</span></div>
-                  <div class="label">Merchants in 2 months</div>
-                </div>
-                <div class="col-3 stat-box">
-                  <div class="number">50<span style="font-size:1rem">%</span></div>
-                  <div class="label">Order time reduction</div>
-                </div>
-              </div>
-            </div>
+      <div class="rec-card reveal reveal-d1">
+        <p class="rec-quote">Abhishek started taking more responsibilities within days of joining. He took no time for induction and was ever ready to not only understand our products but also to better them. Excellent can-do approach — it's a pleasure working with him!</p>
+        <div class="rec-author">
+          <div class="rec-avatar">T</div>
+          <div>
+            <div class="rec-name">Tejasvini Wasim Shaikh</div>
+            <div class="rec-title">HR Manager, ideaTree / Building Unicorns</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <nav id="navi">
-              <ul>
-                <li><a href="#page-1">Experience</a></li>
-                <li><a href="#page-2">Education</a></li>
-                <li><a href="#page-3">Skills</a></li>
-                <li><a href="#page-4">Certifications</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-md-9">
-
-            <!-- EXPERIENCE -->
-            <div id="page-1" class="page one">
-              <h2 class="heading">Experience</h2>
-
-              <!-- Mosambee -->
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-innovation"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">Feb 2024 – Present</span>
-                  <h2>Senior PM – Acquiring &amp; Payments</h2>
-                  <span class="position">Mosambee (Synergistic Financial Networks)</span>
-                  <p><em>Clients: Magnati (UAE) · Pine Labs · Infibeam · Bank Muscat · Network International · Indian Bank</em></p>
-                  <ul style="padding-left:18px;font-size:14px;">
-                    <li>Owned the MEA-first <strong>Tap to Pay on iPhone</strong> launch for Magnati — product, compliance, and go-to-market; no prior Apple MEA reference customer existed.</li>
-                    <li>Conceptualised and shipped <strong>MF SR600</strong> — low-cost QR + card acceptance device — from blank-page brief to live product with Pine Labs, HDFC, Yes Bank, and Infibeam.</li>
-                    <li>Defined the <strong>SoftPOS SDK</strong> product — acceptance flows, TID rotation logic, DUKPT/AES key management, and MPoC compliance model — enabling partner self-serve integration.</li>
-                    <li>Took <strong>MPCSS QR integration</strong> live for Bank Muscat (Oman) — resolved ambiguous scheme specs via TLV field model, CRC logic, and SalisPay webhook contract.</li>
-                    <li>Eliminated manual NI merchant config with auto-detection logic for N-Genius One merchants, removing a recurring ops bottleneck.</li>
-                    <li>Ran <strong>BIN sponsorship program</strong> with Indian Bank — scheme onboarding, BIN config, acquiring compliance across Visa, Mastercard &amp; RuPay; 300 merchants live in 2 months.</li>
-                    <li>Built <strong>SettleCore</strong> — Mosambee's reconciliation and payout engine — from scratch; daily recon and merchant payouts in production. Defined data model, exception logic, and payout rules.</li>
-                    <li>Held <strong>PCI DSS and PCI MPoC compliance</strong> across all live products as an active product constraint shaping architecture decisions.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- ePaisa VP -->
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-innovation"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">Sep 2021 – Jan 2024</span>
-                  <h2>Vice President, Product</h2>
-                  <span class="position">ePaisa India &nbsp;·&nbsp; Head of Product for eAtos (US restaurant SaaS)</span>
-                  <ul style="padding-left:18px;font-size:14px;">
-                    <li>Reduced order processing time by <strong>50%</strong> by redesigning the end-to-end ordering flow and launching 'Simple Mode' for high-volume restaurant environments.</li>
-                    <li>Rebuilt the online order management portal — cashiers processed orders <strong>75% faster</strong> during peak traffic.</li>
-                    <li>Built <strong>InventoryOS</strong> from scratch — raw material tracking, recipe costing, pricing, and profitability analytics for SMB restaurants.</li>
-                    <li>Shipped <strong>LoyaltyOS</strong> (loyalty engine) and orchestrated 20+ third-party integrations including telephony (VoiceOS via DialogFlow), weather/events forecasting, and Recipe AI.</li>
-                    <li>Led a team of ~10 PMs and project managers; owned all client, vendor, and stakeholder relationships including commercial negotiations.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Eccentric Engine -->
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-innovation"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">Apr 2021 – Jun 2021</span>
-                  <h2>Associate Product Manager</h2>
-                  <span class="position">Eccentric Engine &nbsp;·&nbsp; Client: Nissan India</span>
-                  <p>Defined early roadmap, wireframes, and documentation for 'Concierge' — a new digital platform for Nissan India — enabling structured Agile delivery across design and engineering.</p>
-                </div>
-              </div>
-
-              <!-- ePaisa QA -->
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-innovation"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">Apr 2018 – Jun 2019</span>
-                  <h2>Senior Tester / QA Lead</h2>
-                  <span class="position">ePaisa India</span>
-                  <p>Built test automation framework from scratch; led manual and automation testers; defined release-level test scope aligned with sprint plans. Conducted competitive feature analysis and merchant feedback studies.</p>
-                </div>
-              </div>
-
-              <!-- Capgemini -->
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-innovation"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">Jun 2015 – Jun 2017</span>
-                  <h2>Systems Associate</h2>
-                  <span class="position">Capgemini India &nbsp;·&nbsp; Client: Element (General Electric)</span>
-                  <p>Developed test automation framework using Appium/Xcode; interfaced directly with client BAs to translate requirements into test plans.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- EDUCATION -->
-            <div id="page-2" class="page two">
-              <h2 class="heading">Education</h2>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-idea"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">2019 – 2021</span>
-                  <h2>PGDM – Finance / Business Analytics &amp; IT</h2>
-                  <span class="position">IMT Nagpur</span>
-                  <p>CGPA 8.02/10 &nbsp;·&nbsp; <strong>Silver Medalist</strong></p>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-idea"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">2020 – 2021</span>
-                  <h2>PGD – Artificial Intelligence &amp; Machine Learning</h2>
-                  <span class="position">IIIT Bangalore / upGrad</span>
-                  <p>CGPA 3.38/4</p>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-idea"></span>
-                </div>
-                <div class="text pl-3">
-                  <span class="date">2012 – 2015</span>
-                  <h2>BSc. Information Technology</h2>
-                  <span class="position">Mumbai University</span>
-                  <p>74.63%</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- SKILLS -->
-            <div id="page-3" class="page three">
-              <h2 class="heading">Skills</h2>
-
-              <div class="ftco-animate mb-4">
-                <h5 style="font-weight:600;margin-bottom:10px;">Payments &amp; Acquiring</h5>
-                <span class="skill-tag highlight">SoftPOS / MPoC</span>
-                <span class="skill-tag highlight">Tap to Pay on iPhone</span>
-                <span class="skill-tag highlight">PCI DSS</span>
-                <span class="skill-tag highlight">PCI MPoC</span>
-                <span class="skill-tag">DUKPT / AES</span>
-                <span class="skill-tag">TLV Encoding</span>
-                <span class="skill-tag">QR Payments</span>
-                <span class="skill-tag">DCC</span>
-                <span class="skill-tag">BIN Sponsorship</span>
-                <span class="skill-tag">Acquiring Workflows</span>
-                <span class="skill-tag">Visa / MC / RuPay</span>
-                <span class="skill-tag">MPCSS (Oman)</span>
-                <span class="skill-tag">EMV Schemes</span>
-                <span class="skill-tag">Settlement Recon</span>
-              </div>
-
-              <div class="ftco-animate mb-4">
-                <h5 style="font-weight:600;margin-bottom:10px;">Product Management</h5>
-                <span class="skill-tag highlight">PRD Writing</span>
-                <span class="skill-tag highlight">Roadmapping</span>
-                <span class="skill-tag highlight">SDK / API Product</span>
-                <span class="skill-tag">Wireframing (Figma / Adobe XD)</span>
-                <span class="skill-tag">A/B Testing</span>
-                <span class="skill-tag">User Interviews</span>
-                <span class="skill-tag">OKR Definition</span>
-                <span class="skill-tag">JIRA / Confluence</span>
-              </div>
-
-              <div class="ftco-animate mb-4">
-                <h5 style="font-weight:600;margin-bottom:10px;">Technical</h5>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">Java (integration review)</span>
-                <span class="skill-tag">Kotlin</span>
-                <span class="skill-tag">Flutter / Dart</span>
-                <span class="skill-tag">Postman</span>
-                <span class="skill-tag">AWS Associate</span>
-              </div>
-
-              <div class="ftco-animate mb-4">
-                <h5 style="font-weight:600;margin-bottom:10px;">Analytics</h5>
-                <span class="skill-tag">Amplitude</span>
-                <span class="skill-tag">Google Analytics</span>
-                <span class="skill-tag">Tableau</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">pandas</span>
-                <span class="skill-tag">NumPy</span>
-              </div>
-
-              <div class="row mt-4">
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>Payments &amp; Acquiring</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>Product Strategy &amp; Roadmapping</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>PCI DSS / Compliance</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>SDK / API Product Management</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>Data Analytics (SQL / Python)</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"><span>80%</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                    <h3>Stakeholder &amp; Team Leadership</h3>
-                    <div class="progress">
-                      <div class="progress-bar color-6" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%"><span>88%</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CERTIFICATIONS -->
-            <div id="page-4" class="page four">
-              <h2 class="heading">Certifications</h2>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>CSPO – Certified Scrum Product Owner</h2>
-                  <span class="position">Scrum Alliance</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>SAFe 6.0 Agile Product Manager</h2>
-                  <span class="position">Scaled Agile</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>AWS Solutions Architect Associate</h2>
-                  <span class="position">Amazon Web Services &nbsp;·&nbsp; In Progress</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Google Analytics (Advanced)</h2>
-                  <span class="position">Google</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Google Prompting Essentials</h2>
-                  <span class="position">Google</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>PGD – Artificial Intelligence &amp; Machine Learning</h2>
-                  <span class="position">IIIT Bangalore / upGrad</span>
-                </div>
-              </div>
-
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-analysis"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Silver Medal – PGDM Finance / BA-IT</h2>
-                  <span class="position">IMT Nagpur &nbsp;·&nbsp; CGPA 8.02/10</span>
-                </div>
-              </div>
-            </div>
-
+      <div class="rec-card reveal reveal-d2">
+        <p class="rec-quote">His attention to detail and eye for design saved countless hours to our development teams. He is a very proactive person and not afraid to take initiative. I hope he will work on projects where his talent will be appreciated.</p>
+        <div class="rec-author">
+          <div class="rec-avatar">H</div>
+          <div>
+            <div class="rec-name">Halil Kabaca — PMP, ISO20K, ITIL v3</div>
+            <div class="rec-title">Founder, Novarum Software &amp; Consulting</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- KEY PROJECTS -->
-    <section class="ftco-section ftco-project" id="projects-section">
-      <div class="container-fluid px-md-0">
-        <div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Work</h1>
-            <h2 class="mb-4">Key Projects</h2>
-            <p>Products shipped from zero to production across MEA, India, and Oman.</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">Mosambee · MEA-first</span>
-                <h3><a href="#">Tap to Pay on iPhone — Magnati (UAE)</a></h3>
-                <span>SoftPOS · MPoC · Apple Pay · PCI MPoC</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">Mosambee · Hardware + Software</span>
-                <h3><a href="#">MF SR600 — QR &amp; Card Acceptance Device</a></h3>
-                <span>Pine Labs · HDFC · Yes Bank · Infibeam</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">Mosambee · Settlement</span>
-                <h3><a href="#">SettleCore — Reconciliation &amp; Payout Engine</a></h3>
-                <span>Daily Recon · Merchant Payouts · Exception Logic</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">Mosambee · Oman</span>
-                <h3><a href="#">MPCSS QR Integration — Bank Muscat</a></h3>
-                <span>TLV Model · CRC Logic · SalisPay Webhook</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">ePaisa · Restaurant SaaS</span>
-                <h3><a href="#">InventoryOS + LoyaltyOS — eAtos</a></h3>
-                <span>Recipe Costing · Loyalty Engine · 20+ Integrations</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <span class="project-label">Mosambee · Acquiring</span>
-                <h3><a href="#">BIN Sponsorship Program — Indian Bank</a></h3>
-                <span>Visa · Mastercard · RuPay · 300 merchants in 2 months</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- RECOMMENDATIONS -->
-    <section class="ftco-section" id="recommendations-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Words</h1>
-            <h2 class="mb-4">Recommendations</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 ftco-animate mb-4">
-            <div class="block-23 shadow p-4" style="background:#fff;border-radius:8px;">
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon mr-3" style="width:48px;height:48px;border-radius:50%;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#f97316;">S</div>
-                <div>
-                  <strong>Shreyash Shah</strong><br>
-                  <small class="text-muted">Sr Graphic Designer at eigital</small>
-                </div>
-              </div>
-              <p style="font-size:14px;color:#555;">"Abhishek is a hardworking colleague — he understood the product so well in such quick time. He would take initiatives, hold strong to his point, explain the problem and come up with a solution that makes sense. An amazing colleague with loads of positive energy."</p>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate mb-4">
-            <div class="block-23 shadow p-4" style="background:#fff;border-radius:8px;">
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon mr-3" style="width:48px;height:48px;border-radius:50%;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#f97316;">T</div>
-                <div>
-                  <strong>Tejasvini Wasim Shaikh</strong><br>
-                  <small class="text-muted">HR Manager at ideaTree / Building Unicorns</small>
-                </div>
-              </div>
-              <p style="font-size:14px;color:#555;">"Abhishek started taking more responsibilities within days of joining. He took no time for induction and was ever ready to not only understand the usability of our products but also to better them. Excellent can-do approach — it's a pleasure working with him!"</p>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate mb-4">
-            <div class="block-23 shadow p-4" style="background:#fff;border-radius:8px;">
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon mr-3" style="width:48px;height:48px;border-radius:50%;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#f97316;">H</div>
-                <div>
-                  <strong>Halil Kabaca – PMP, ISO20K, ITIL v3</strong><br>
-                  <small class="text-muted">Founder at Novarum Software &amp; Consulting</small>
-                </div>
-              </div>
-              <p style="font-size:14px;color:#555;">"His attention to detail and eye for design saved countless hours to our development teams. He is a very proactive person and not afraid to take initiative. I hope he will be working on projects where his talent will be appreciated."</p>
-            </div>
-          </div>
-          <div class="col-md-6 ftco-animate mb-4">
-            <div class="block-23 shadow p-4" style="background:#fff;border-radius:8px;">
-              <div class="d-flex align-items-center mb-3">
-                <div class="icon mr-3" style="width:48px;height:48px;border-radius:50%;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#f97316;">S</div>
-                <div>
-                  <strong>Shubham Upadhyay</strong><br>
-                  <small class="text-muted">QA Automation Engineer at Zycus</small>
-                </div>
-              </div>
-              <p style="font-size:14px;color:#555;">"I worked with Abhishek in the same team. He is excellent in communication, programming, and team management. He has good problem-solving, analytical skills, and team leadership skill."</p>
-            </div>
+      <div class="rec-card reveal reveal-d3">
+        <p class="rec-quote">I worked with Abhishek in the same team. He is excellent in communication, programming, and team management. He has strong problem-solving, analytical, and team leadership skills.</p>
+        <div class="rec-author">
+          <div class="rec-avatar">S</div>
+          <div>
+            <div class="rec-name">Shubham Upadhyay</div>
+            <div class="rec-title">QA Automation Engineer, Zycus</div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- CTA -->
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>Open to <span>Senior PM / Director</span> roles in Payments</h2>
-            <p>Looking for a hands-on PM who can own acquiring infrastructure, drive compliance, and ship production products? Let's talk.</p>
-            <p class="mb-0"><a href="mailto:abhimaurya.jobs@gmail.com" class="btn btn-primary py-3 px-5">Get In Touch</a></p>
-          </div>
-        </div>
+<!-- ── CONTACT ── -->
+<section id="contact" class="section">
+  <div class="container" style="text-align:center;">
+    <span class="section-label reveal">Contact</span>
+    <h2 class="section-title reveal reveal-d1" style="color:#fff;max-width:600px;margin:0 auto 16px;">Let's talk payments.</h2>
+    <p class="section-sub reveal reveal-d2" style="max-width:480px;margin:0 auto;">Open to Senior PM and Director-level roles in Payments, Acquiring, and Fintech. Based in Mumbai — open to global remote.</p>
+    <div class="contact-grid">
+      <a href="tel:+919987543476" class="contact-item">
+        <div class="c-icon">📞</div>
+        <div class="c-label">Phone</div>
+        <div class="c-val">+91-9987543476</div>
+      </a>
+      <a href="mailto:abhimaurya.jobs@gmail.com" class="contact-item">
+        <div class="c-icon">✉️</div>
+        <div class="c-label">Email</div>
+        <div class="c-val">abhimaurya.jobs@gmail.com</div>
+      </a>
+      <a href="https://linkedin.com/in/abhishekrmaurya" target="_blank" class="contact-item">
+        <div class="c-icon">💼</div>
+        <div class="c-label">LinkedIn</div>
+        <div class="c-val">abhishekrmaurya</div>
+      </a>
+      <div class="contact-item">
+        <div class="c-icon">📍</div>
+        <div class="c-label">Location</div>
+        <div class="c-val">Mumbai, India</div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- CONTACT -->
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Want to discuss a product role, consulting engagement, or just connect? Reach out through any channel below.</p>
-          </div>
-        </div>
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">Phone</h3>
-                <p><a href="tel:+919987543476">+91-9987543476</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">Email</h3>
-                <p><a href="mailto:abhimaurya.jobs@gmail.com">abhimaurya.jobs@gmail.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-linkedin"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">LinkedIn</h3>
-                <p><a href="https://linkedin.com/in/abhishekrmaurya" target="_blank">abhishekrmaurya</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">Location</h3>
-                <p>Mumbai, India</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <p>© 2026 Abhishek Maurya &nbsp;·&nbsp; Senior PM, Payments &amp; Acquiring &nbsp;·&nbsp; <a href="https://linkedin.com/in/abhishekrmaurya" target="_blank">LinkedIn</a></p>
+  </div>
+</footer>
 
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 text-center">
-            <p>Abhishek Maurya &mdash; Senior PM, Payments &amp; Acquiring &mdash; Mumbai, India</p>
-            <p class="mb-0">
-              <a href="https://linkedin.com/in/abhishekrmaurya" target="_blank" style="margin:0 8px;"><span class="icon-linkedin"></span></a>
-              <a href="mailto:abhimaurya.jobs@gmail.com" style="margin:0 8px;"><span class="icon-paper-plane"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+<script>
+  // ── NAV scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
+  // ── Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-  </body>
+  // ── Rotating hero title
+  const titles = [
+    'Senior PM — Payments &amp; Acquiring',
+    'SoftPOS &amp; MPoC Specialist',
+    'Tap to Pay on iPhone — MEA First',
+    'PCI DSS &amp; Compliance Lead',
+    'Acquiring Infrastructure Builder'
+  ];
+  let ti = 0;
+  const rotEl = document.getElementById('rotatingTitle');
+  setInterval(() => {
+    rotEl.style.opacity = '0';
+    rotEl.style.transform = 'translateY(8px)';
+    setTimeout(() => {
+      ti = (ti + 1) % titles.length;
+      rotEl.innerHTML = titles[ti];
+      rotEl.style.opacity = '1';
+      rotEl.style.transform = 'none';
+    }, 300);
+  }, 3000);
+  rotEl.style.transition = 'opacity .3s ease, transform .3s ease';
+
+  // ── Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => revealObs.observe(el));
+
+  // ── Skill bar fill on scroll
+  const bars = document.querySelectorAll('.skill-bar-fill');
+  const barObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.width = e.target.dataset.w + '%';
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  bars.forEach(b => barObs.observe(b));
+
+  // ── Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+    });
+  });
+</script>
+</body>
 </html>
